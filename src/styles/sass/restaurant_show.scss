@@ -1,0 +1,65 @@
+@import './mixins.scss';
+
+.restaurant-content-container {
+  position: fixed;
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  top: 60px;
+  z-index: 90;
+  background-color: #FFF;
+  transform: translateX(100%);
+  transition: 0.3s ease-in-out;
+
+  &.active {
+    transform: translateX(0%);
+  }
+
+  .map-placeholder {
+    width: 100%;
+    height: 180px;
+  }
+
+  .restaurant-info-stripe {
+    width: 100%;
+    background-color: #34B379;
+    padding: 15px 12px;
+    text-align: left;
+    color: white;
+    min-height: 60px;
+
+    .restaurant-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .restaurant-category {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+  }
+
+  .restaurant-detail-container {
+    text-align: left;
+    padding: 16px 12px;
+
+    p {
+      font-size: 1.6rem;
+      font-weight: 400;
+      
+      & + p {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+@media(min-width: 1024px) {
+  .restaurant-content-container {
+    width: calc(300px);
+    transform: translateX(100vw);
+
+    &.active {
+      transform: translateX(calc(100vw - 300px));
+    }
+  }
+}
