@@ -1,8 +1,9 @@
 import axios from 'axios'
+import { GET_RESTAURANTS } from '../constants/actionTypes'
 
 const initialState = [];
 
-const GET_RESTAURANTS = "GET_RESTAURANTS";
+
 
 export default function restaurantsReducer(state = initialState, action) {
   switch (action.type) {

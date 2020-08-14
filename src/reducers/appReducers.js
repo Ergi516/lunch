@@ -1,3 +1,4 @@
+import { TOGGLE_DETAIL, TOGGLE_FULL_MAP,CHANGE_ROUTE, CHANGE_RESTAURANT } from '../constants/actionTypes'
 
 const initialState = {
   showDetail: false,
@@ -6,10 +7,7 @@ const initialState = {
   showFullMap: false,
 };
 
-const TOGGLE_DETAIL = "TOGGLE_DETAIL";
-const TOGGLE_FULL_MAP = "TOGGLE_FULL_MAP";
-const CHANGE_ROUTE = "CHANGE_ROUTE";
-const CHANGE_RESTAURANT = "CHANGE_RESTAURANT";
+
 
 export default function appReducer(state = initialState, action) {
   switch (action.type) {
