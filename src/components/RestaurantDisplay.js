@@ -38,7 +38,7 @@ class RestaurantDisplay extends PureComponent {
       <div className={`restaurant-content-container ${showDetail ? 'active' : ''}`}>
         <div className="map-placeholder">
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyBM3LuxFCdnd1GY_w_pQUqlr4Gc_t_3oCc' }}
+            bootstrapURLKeys={{ key: 'REACT_APP_API_KEY' }}
             center={this.state.center}
             zoom={this.state.zoom}
           >
