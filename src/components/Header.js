@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeRoute, toggleFullMap, toggleDetail } from '../reducers/appReducers';
+import { changeRoute, toggleFullMap, toggleDetail } from '../actions/actions';
 import map_icon from '../images/icon_map@2x.png';
 import web_back from '../images/ic_webBack@2x.png';
 import web_forward from '../images/ic_webForward@2x.png';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { changeRestaurant, toggleDetail } from '../reducers/appReducers';
+import { changeRestaurant, toggleDetail } from '../actions/actions';
 
 function RestaurantPreview({ restaurant, dispatch }) {
   return (

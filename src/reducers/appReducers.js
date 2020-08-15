@@ -1,5 +1,7 @@
 import { TOGGLE_DETAIL, TOGGLE_FULL_MAP,CHANGE_ROUTE, CHANGE_RESTAURANT } from '../constants/actionTypes'
 
+
+
 const initialState = {
   showDetail: false,
   currentPage: 'lunch',
@@ -28,22 +30,3 @@ export default function appReducer(state = initialState, action) {
   }
 };
 
-export const toggleDetail = bool => ({
-  type: TOGGLE_DETAIL,
-  payload: bool,
-});
-
-export const toggleFullMap = bool => ({
-  type: TOGGLE_FULL_MAP,
-  payload: bool,
-});
-
-export const changeRoute = page => ({
-  type: CHANGE_ROUTE,
-  payload: page,
-});
-
-export const changeRestaurant = restaurant => ({
-  type: CHANGE_RESTAURANT,
-  payload: restaurant,
-});

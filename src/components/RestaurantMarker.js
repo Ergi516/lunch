@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import RestaurantToolTip from './RestaurantToolTip';
-import { toggleDetail, changeRestaurant } from '../reducers/appReducers';
+import { toggleDetail, changeRestaurant } from '../actions/actions';
 
 class RestaurantInfoMarker extends Component {
   state = {

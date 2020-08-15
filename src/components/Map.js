@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import GoogleMapReact from 'google-map-react';
 import RestaurantMarker from './RestaurantMarker';
-import { toggleDetail } from '../reducers/appReducers';
+import { toggleDetail } from '../actions/actions';
 
 const Map =({ restaurantsReducer, showFullMap, showDetail, dispatch }) => {
   const getMapCenter = () => {
