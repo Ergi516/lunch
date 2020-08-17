@@ -5,7 +5,6 @@ import Home from '../containers/Home';
 import Internets from './Internets';
 import { getRestaurants } from '../reducers/restaurantsReducers';
 
-
 import '../styles/css/main.css';
 import '../styles/css/header.css';
 import '../styles/css/navbar.css';

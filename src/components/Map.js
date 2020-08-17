@@ -21,7 +21,7 @@ const Map =({ restaurantsReducer, showFullMap, showDetail, dispatch }) => {
   return (
     <div className={`web-map ${showFullMap ? 'active' : ''}`}>
       <GoogleMapReact
-        bootstrapURLKeys={{key: 'REACT_APP_API_KEY' }}
+        bootstrapURLKeys={{key: '' }}
         center={restaurantsReducer[0] ? getMapCenter() : { lat: 0, lng: 0 }}
         zoom={13}
       >

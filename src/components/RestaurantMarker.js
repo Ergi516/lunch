@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import RestaurantToolTip from './RestaurantToolTip';
 import { toggleDetail, changeRestaurant } from '../actions/actions';
 
-class RestaurantInfoMarker extends Component {
+class RestaurantMarker extends Component {
   state = {
     showInfoMarker: false,
     showToolTip: false,
@@ -35,7 +35,7 @@ class RestaurantInfoMarker extends Component {
         className='restaurant-info-marker'
       >
         {showToolTip && <RestaurantToolTip restaurant={restaurant} />}
-        <div className="lunchtyme-logo" onClick={this.toggleShowInfoMarker} />
+        <div className="location-logo" onClick={this.toggleShowInfoMarker} />
       </div>
     )
   }
@@ -43,4 +43,4 @@ class RestaurantInfoMarker extends Component {
 
 const mapStateToProps = state => ({ appReducer: state.appReducer });
 
-export default connect(mapStateToProps)(RestaurantInfoMarker);
+export default connect(mapStateToProps)(RestaurantMarker);
